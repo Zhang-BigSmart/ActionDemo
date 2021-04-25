@@ -7,8 +7,8 @@ jobs:
     - name: Mirror the Github organization repos to Gitee.
       uses: Yikun/hub-mirror-action@v1.0
       with:
-        src: github/Test
-        dst: gitee/Test
+        src: github/Edisonboy
+        dst: gitee/Edisonboy
         dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
         dst_token:  ${{ secrets.GITEE_TOKEN }}
         account_type: org
