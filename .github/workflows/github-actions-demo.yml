@@ -13,6 +13,6 @@ jobs:
         dst_token:  ${{ secrets.GITEE_TOKEN }}
         timeout: 600
         debug: true
-        force_update: true
+        #force_update: true
         white_list: "Test"
 
