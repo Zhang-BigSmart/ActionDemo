@@ -8,7 +8,7 @@ jobs:
       uses: Yikun/hub-mirror-action@v1.0
       with:
         src: github/Edisonboy
-        dst: gitee/Edisonboy
+        dst: gitee/edison_zz
         dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
         dst_token:  ${{ secrets.GITEE_TOKEN }}
         timeout: 600
