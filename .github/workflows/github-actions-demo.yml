@@ -14,5 +14,4 @@ jobs:
         timeout: 600
         debug: true
         force_update: true
-        static_list: "Test"
-
+        static_list: "test"
