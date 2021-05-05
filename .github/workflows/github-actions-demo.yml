@@ -4,14 +4,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - name: Mirror the Github organization repos to Gitee.
-      uses: Yikun/hub-mirror-action@v1.0
-      with:
-        src: github/Edisonboy
-        dst: gitee/edison_zz
-        dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
-        dst_token:  ${{ secrets.GITEE_TOKEN }}
-        timeout: 600
-        debug: true
-        force_update: true
-        static_list: "test"
+    - name: Get Git Log
+      id: git_log
+      uses: JantHsueh/get-git-log-action@master
