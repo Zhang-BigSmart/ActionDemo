@@ -13,3 +13,4 @@ jobs:
         tag: origin/master
     - name: 'echo'
       run: echo $log
+
