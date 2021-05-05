@@ -4,6 +4,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+    - name: 'Checkout codes'
+      uses: actions/checkout@v1
     - name: Get Git Log
       id: git_log
       uses: JantHsueh/get-git-log-action@master
