@@ -11,4 +11,5 @@ jobs:
       uses: Edisonboy/latest-git-log-action@main
       with:
         tag: origin/master
-
+    - name: 'echo'
+      run: echo $log
