@@ -11,3 +11,4 @@ jobs:
       uses: JantHsueh/get-git-log-action@master
       with:
         tag: origin/master
+
