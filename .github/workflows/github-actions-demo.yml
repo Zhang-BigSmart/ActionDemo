@@ -7,3 +7,5 @@ jobs:
     - name: Get Git Log
       id: git_log
       uses: JantHsueh/get-git-log-action@master
+      with:
+        tag: master
