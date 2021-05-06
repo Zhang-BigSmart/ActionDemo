@@ -1,4 +1,4 @@
-name: Gitee repos mirror periodic job
+name: GitHub Action Demo
 on: [push]
 jobs:
   build:
