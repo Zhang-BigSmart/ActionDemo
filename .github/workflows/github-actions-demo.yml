@@ -11,8 +11,6 @@ jobs:
       uses: Edisonboy/latest-git-log-action@main
       with:
         tag: origin/master
-    - name: 'echo'
-      run: echo ${{steps.git_log.outputs.log}}
     - name: Send email
       uses: dawidd6/action-send-mail@v3
       with:
