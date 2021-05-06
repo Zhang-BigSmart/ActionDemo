@@ -24,4 +24,3 @@ jobs:
         to: edisonzhang5200@gmail.com
         from: Luke Skywalker # <user@example.com>
         body: Build job of ${{github.repository}} completed successfully!
-
