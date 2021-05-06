@@ -17,10 +17,11 @@ jobs:
       uses: devellany/send-mailer@v1.0.2
       with:
         host: smtp.qq.com
-        account: ${{secrets.ACCOUNT}}
-        password: ${{secrets.MAIL_PASSWORD}}
-        sender: edison
-        from: ${{secrets.MAIL_ADDRESS}}
-        to: edisonzhang5200@gmail.com
-        subject: mail title.
-        body: message test
+          account: ${{secrets.ACCOUNT}}
+          password: ${{secrets.MAIL_PASSWORD}}
+          sender: edison
+          from: ${{secrets.MAIL_ADDRESS}}
+          to: edisonzhang5200@gmail.com
+          subject: mail title.
+          body: message test
+          contentType: text/plain
