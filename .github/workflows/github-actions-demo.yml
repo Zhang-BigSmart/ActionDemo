@@ -24,3 +24,4 @@ jobs:
         to: ${{secrets.MAIL_TOUSERNAME}}
         from: Luke Skywalker # <user@example.com>
         body: Build job of ${{github.repository}} completed successfully! ${{steps.git_log.outputs.log}}
+
