@@ -12,7 +12,7 @@ jobs:
       with:
         tag: origin/master
     - name: 'echo'
-      run: echo $log
+      run: echo "log=$log" >> $GITHUB_ENV
     - name: Send email
       uses: dawidd6/action-send-mail@v3
       with:
@@ -21,7 +21,7 @@ jobs:
         username: ${{secrets.MAIL_USERNAME}}
         password: ${{secrets.MAIL_PASSWORD}}
         subject: Github Actions job result
-        to: edisonzhang5200@gmail.com
+        to: ${{secrets.MAIL_TOUSERNAME}}
         from: Luke Skywalker # <user@example.com>
-        body: Build job of ${{github.repository}} completed successfully!
+        body: Build job of ${{github.repository}} completed successfully! ${{env.log}}
 
