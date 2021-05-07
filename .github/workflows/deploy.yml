@@ -1,4 +1,4 @@
-name: GitHub Action Demo
+name: deploy
 on:
   push:
     branches:
@@ -12,6 +12,7 @@ jobs:
     - name: 'Java env'
       uses: actions/setup-java@v2
       with:
+        distribution: 'zulu'
         java-version: '8'
     - run: mvn -B deploy -Dgpg.skip
       env:
