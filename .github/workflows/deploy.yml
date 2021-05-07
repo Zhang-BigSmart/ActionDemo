@@ -1,0 +1,20 @@
+name: GitHub Action Demo
+on:
+  push:
+    branches:
+      - dev
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: 'Checkout codes'
+      uses: actions/checkout@v2
+    - name: 'Java env'
+      uses: actions/setup-java@v2
+      with:
+        java-version: '8'
+    - run: mvn -B deploy -Dgpg.skip
+      env:
+        MAVEN_USERNAME: ${{ secrets.MAVEN_USER_NAME }}
+        MAVEN_PASSWORD: ${{ secrets.MAVEN_PASSWORD }}
+

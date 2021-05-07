@@ -5,16 +5,19 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.tuya</groupId>
-    <artifactId>test</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-
-    <name>test</name>
+    <artifactId>ActionDemo</artifactId>
+    <version>1.0.0</version>
+    <packaging>pom</packaging>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
+
+    <modules>
+        <module>test</module>
+    </modules>
 
     <dependencies>
         <dependency>
@@ -29,7 +32,7 @@
         <repository>
             <id>tuya-other</id>
             <name>maven tuya release</name>
-            <url>https://maven-other.tuya.com/repository/maven-public/</url>
+            <url>https://maven-other.tuya.com/repository/maven-releases/</url>
         </repository>
         <snapshotRepository>
             <id>tuya-other</id>
