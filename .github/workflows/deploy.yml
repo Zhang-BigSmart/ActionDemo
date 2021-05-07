@@ -14,6 +14,7 @@ jobs:
       with:
         distribution: 'zulu'
         java-version: '8'
+        server-id: maven
         server-username: MAVEN_USERNAME
         server-password: MAVEN_PASSWORD
     - run: mvn -B deploy -Dgpg.skip
