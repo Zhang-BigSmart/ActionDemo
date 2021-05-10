@@ -2,6 +2,7 @@ name: maven deploy
 on:
   push:
     branches:
+      - dev
       - release
 jobs:
   build:
