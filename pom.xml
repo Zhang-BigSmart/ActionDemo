@@ -30,12 +30,12 @@
 
     <distributionManagement>
         <repository>
-            <id>maven</id>
+            <id>tuya-maven</id>
             <name>maven tuya release</name>
             <url>https://maven-other.tuya.com/repository/maven-releases/</url>
         </repository>
         <snapshotRepository>
-            <id>maven</id>
+            <id>tuya-maven</id>
             <name>maven tuya snapshot</name>
             <url>https://maven-other.tuya.com/repository/maven-snapshots/</url>
         </snapshotRepository>
