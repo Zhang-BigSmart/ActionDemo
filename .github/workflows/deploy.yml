@@ -19,9 +19,9 @@ jobs:
           server-password: MAVEN_PASSWORD
           settings-path: ${{ github.action_path }}
       - name: echo gc
-        run: ls $GITHUB_ACTION_PATH && pwd
+        run: ls -a $GITHUB_ACTION_PATH && pwd
       - name: echo gw
-        run: ls $GITHUB_WORKSPACE && pwd
+        run: ls -a $GITHUB_WORKSPACE && pwd
       - name: Publish Maven
         run: mvn deploy -Dmaven.test.skip=true -s $GITHUB_WORKSPACE/settings.xml
         env:
