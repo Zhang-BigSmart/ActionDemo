@@ -1,8 +1,9 @@
-name: deploy
+name: maven deploy
 on:
   push:
     branches:
       - dev
+      - release
 jobs:
   build:
     runs-on: ubuntu-latest
